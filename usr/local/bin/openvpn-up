@@ -14,7 +14,7 @@ echo "outgoing-interface: $(ip a list tun0 \
 awk '{print $2}')" > /etc/unbound/unbound_outgoing_interface
 
 # uncomment include
-sed -i '/include: \/etc\/unbound\/unbound_outgoing_interface/s/#//' /etc/unbound/unbound.conf.d/custom.conf
+sed -i '/include: "\/etc\/unbound\/unbound_outgoing_interface"/s/#//' /etc/unbound/unbound.conf.d/custom.conf
 
 # sleep for 1 second
 sleep 1

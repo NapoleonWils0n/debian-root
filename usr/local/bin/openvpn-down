@@ -11,7 +11,7 @@ ip route flush table tunnel
 echo > /etc/unbound/unbound_outgoing_interface
 
 # comment out include
-sed -i '/include: \/etc\/unbound\/unbound_outgoing_interface/s/^/#/' /etc/unbound/unbound.conf.d/custom.conf
+sed -i '/include: "\/etc\/unbound\/unbound_outgoing_interface"/s/^/#/' /etc/unbound/unbound.conf.d/custom.conf
 
 # sleep for 1 second
 sleep 1
