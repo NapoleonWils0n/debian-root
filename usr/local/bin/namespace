@@ -1,4 +1,0 @@
-#!/bin/sh
-
-# open in namespace
-ip netns exec vpn doas -u djwilcox -- "$@"
